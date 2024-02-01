@@ -1,0 +1,8 @@
+package edu.kh.variable.ex1;
+
+public class VariableExample1 {
+
+	public static void main (args[]) {
+		
+	}
+}
