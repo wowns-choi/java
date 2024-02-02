@@ -22,10 +22,17 @@ public class CastingPractice1 {
 		System.out.println( (int)fNum ); // 3
 		System.out.println( iNum1/ (int)fNum); // 3
 		System.out.println( iNum1/fNum  );// 3.3333333   
+		//float: 소수점 아래 8번째 자리까지 연산 후 반올림
+		//double: 소수점 아래 16번째 자리까지 연산 후 반올림
+		
 		System.out.println( (double)iNum1/fNum ); // 3.3333333333333335
+		
 		System.out.println( ch ); // 'A'
+		
 		System.out.println( (int)ch ); // 65
-		System.out.println( (int)ch + iNum1 ); // 75
+		
+		System.out.println( ch + iNum1 ); // 75
+		
 		System.out.println( (char)((int)ch +iNum1) ); // 'K' 
 
 	}
