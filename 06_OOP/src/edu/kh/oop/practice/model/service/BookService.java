@@ -8,7 +8,6 @@ public class BookService {
 		Book book1 = new Book();
 		Book book2 = new Book("자바의 정석", 30000, 0.2, "남궁성");
 		
-		System.out.println(book1);
 		System.out.println(book1.toString());
 		System.out.println(book2.toString());
 

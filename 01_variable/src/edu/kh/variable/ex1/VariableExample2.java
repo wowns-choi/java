@@ -6,9 +6,9 @@ public class VariableExample2 {
 		/*자바 기본 자료형 8가지
 		 * 
 		 * 논리형 : boolean(1byte)
-		 * 정수형 : byte(1byte), short(2byte), int(3byte), long(4byte)
+		 * 정수형 : byte(1byte), short(2byte), int(4byte), long(8byte)
 		 * 실수형 : float(4byte), double(8byte)
-		 * 문자형 : char(2byte, 유니코드)
+		 * 문자형 : char(2byte, 유니코드) , 차(char) 이(2)
 		 * */
 		
 		//변수 선언 : 메모리에 값을 저장할 공간을 할당하는 것.
@@ -16,6 +16,7 @@ public class VariableExample2 {
 		
 		//* 카멜 표기법 
 		//연결되는 두 단어 중 후속단어의 첫 문자를 대문자로 표기
+		
 		
 		boolean booleanData;
 		//메모리에 논리값(t/f)을 저장할 공간을 1byte 할당하고
@@ -88,6 +89,7 @@ public class VariableExample2 {
 		final int RIGHT_MOVE = 1;
 		
 		System.out.println(1+1.3); 
+		
 		//정수형 + 실수형인데도 2.3으로 잘 나오네?
 		//왜? 1을 내부적으로 1.0으로 변경해서, 실수형 + 실수형으로 바꾼거임.
 		//이걸 "자동 형 변환" 이라고 함.

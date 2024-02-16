@@ -298,12 +298,30 @@ public class PracticeService {
 			}
 		}
 		
+		//오름차순으로 정렬해줘야해.
+		for(int i =0; i<arr.length; i++) {
+			
+			for(int k=0; k<i; k++) {
+				if(arr[i] < arr[k]) { 
+					//k는 이전 거, i 는 지금거
+					//이전거가 더 높으면, 지금거를 변수에 담아놓고
+					int current = arr[i];
+					arr[i] = arr[k];
+					arr[k] = current;
+							
+				}
+			}
+		}
+		
+		
 		String str = "";
 		
 		for(int k=0; k<arr.length; k++) {
 			str += arr[k] + "  ";
 		}
 		System.out.print("로또번호 : " + str);			
+		
+		
 		
 	}
 	
@@ -313,13 +331,32 @@ public class PracticeService {
 		System.out.println("문자열 : " );
 		String str = sc.next();
 
-		char[] arr = new char[str.length()];
+		char[] ch = new char[str.length()];
 		
+		for(int i=0; i<str.length(); i++) {
+			ch[i] = str.charAt(i);
+		}
+		System.out.println(Arrays.toString(ch));
+		
+		
+		String str2 = "";
 		
 		for(int k=0; k<str.length(); k++) {
-			arr[k] += str.charAt(k);
+			boolean flag = false;
+			
+			if(flag==true) {
+				str2 += ch[k];
+			}
 		}
-		System.out.println("여기야여기" + Arrays.toString(arr));
+		System.out.println(str2);
+		
+
+		
+		
+	
+		
+
+		}
 		
 
 	
@@ -329,7 +366,7 @@ public class PracticeService {
 		
 		
 		
-	}
+	
 	
 	
 	

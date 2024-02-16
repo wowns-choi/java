@@ -52,6 +52,8 @@ public class VariableExample3 {
 		System.out.println(i4);
 		
 		
+
+		
 		
 		
 		

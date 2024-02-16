@@ -25,11 +25,11 @@ public class VariableExample4 {
 		
 		//int -> byte 강제 형변환
 		int iNum = 290;
-		byte bNum = (byte)iNum; // Type mismatch : cannot convert from int to bye.
+		byte bNum = (byte)iNum; // Type mismatch : cannot convert from int to byte.
 	
 	
-		System.out.println(iNum); //290
-		System.out.println(bNum); //34 //같은 정수형 끼리의 변환 시에도 값의 범위 차이 때문에 데이터 손실이 발생
+		System.out.println("iNum = " + iNum); //290
+		System.out.println("bNum = " + bNum); //34 //같은 정수형 끼리의 변환 시에도 값의 범위 차이 때문에 데이터 손실이 발생
 		//같은 정수형 끼리의 변환 시에도
 		//값의 범위 차이 때문에 데이터 손실이 발생
 		

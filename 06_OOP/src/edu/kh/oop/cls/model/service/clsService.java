@@ -3,7 +3,7 @@ package edu.kh.oop.cls.model.service;
 import edu.kh.oop.cls.model.vo.Student;
 import edu.kh.oop.cls.model.vo.User;
 
-public class clsService /*extends Student*/{
+public class clsService extends Student{
 	public void ex1() {
 		//클래스 접근 제한자 확인하기
 		//public class인 Student 는 import 가능
@@ -23,10 +23,10 @@ public class clsService /*extends Student*/{
 		
 		// 상속 관계에서 직접 접근 가능 범위
 		// 주의: 상속을 받았기 때문에, std.필드명으로 접근하면 안됨. 
-//		System.out.println(v1);		o
+//		System.out.println(std.v1);		
 //		System.out.println(v2); 	
-//		System.out.println(v3);		x
-//		System.out.println(v4);		x
+//		System.out.println(v3);		
+//		System.out.println(v4);		
 	}
 	
 	public void ex2() {
