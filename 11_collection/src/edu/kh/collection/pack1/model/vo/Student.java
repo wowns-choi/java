@@ -1,7 +1,18 @@
-package edu.kh.collection.model.vo;
+package edu.kh.collection.pack1.model.vo;
 
-public class Student {
+import java.util.Comparator;
 
+public class Student implements Comparable<Student>{
+	
+	@Override
+	public int compareTo(Student other) {
+		//나이를 기준으로 오름차순 정렬
+		return this.age - other.age;
+		//만약 나이를 기준으로 내림차순 정렬이었다면?
+		//return other.age - this.age;
+	}
+	
+	
 	//필드
 	private String name; // 이름
 	private int age; // 나이
