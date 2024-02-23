@@ -45,6 +45,7 @@ public class ByteService {
 		//FileNotFoundException 은 IOException 은 자식임.
 		
 		FileOutputStream fos = null;
+		
 		try {
 			//new FileOutputStream("경로");
 			// -> 경로에 작성된 파일과 연결된 파일 출력 스트림 객체 생성
